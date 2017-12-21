@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ecarus.employee.SearchOrScanProfileBarcode">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/background">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:background="@android:color/white">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="Search manually"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:layout_margin="10dp"
+                android:layout_weight="1"/>
+
+            <android.support.v7.widget.SearchView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/barcodeSearchView"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccent"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:src="@android:drawable/ic_menu_search"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:id="@+id/scanBarcodeLinearLayout"
+            android:clickable="true"
+            android:layout_margin="10dp"
+            android:background="@android:color/white">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="Scan barcode"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:layout_margin="10dp"
+                android:layout_weight="1"/>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:src="@drawable/barcode_scanner"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
